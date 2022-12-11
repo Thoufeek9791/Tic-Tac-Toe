@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Inspiration&family=Permanent+Marker&family=Poppins:wght@300;400;500;700&display=swap");
+
+body {
+  background: linear-gradient(to right, #9fa4c4, #b3cdd1);
+  width: 100vw;
+  height: 100vh;
+  font-family: "Permanent Marker", cursive;
+}
+
+.gradient {
+  border-image: linear-gradient(to right, #b621fe, #1fd1f9) !important;
+  border-image-slice: 1 !important;
+  /* border-radius: 15px !important; */
+}
+
+/* #b621fe
+
+#1fd1f9 */
