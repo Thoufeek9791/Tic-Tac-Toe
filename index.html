@@ -14,53 +14,101 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="d-flex justify-content-center align-items-center flex-column">
-    <h1 class="display-1">
-      Tic Tac Toe
-      <small class="display-6 d-block float-right"
-        >Play the Game with fun</small
-      >
-    </h1>
+    <h1 class="display-1">Tic Tac Toe</h1>
     <div class="container my-5 display-6">
       <div class="row">
         <div class="col-sm-4"></div>
-        <div class="col-sm-4 text-center fw-bold">
-          <div class="row gap-4 p-4" disabled>
+        <div class="col-sm-4 text-center fw-bold text-white">
+          <div class="row gap-4 p-4">
             <div
               class="col bg-light p-4 border rounded-3 border-5 gradient"
+              id="value-1" cellIndex = "1"
             ></div>
             <div
               class="col bg-light p-4 border rounded-3 border-5 gradient"
+              id="value-2" cellIndex = "2"
             ></div>
             <div
               class="col bg-light p-4 border rounded-3 border-5 gradient"
+              id="value-3" cellIndex = "3"
             ></div>
           </div>
           <div class="row gap-4 p-4">
             <div
               class="col bg-light p-4 border rounded-3 border-5 gradient"
+              id="value-4" cellIndex = "4"
             ></div>
             <div
               class="col bg-light p-4 border rounded-3 border-5 gradient"
+              id="value-5" cellIndex = "5"
             ></div>
             <div
               class="col bg-light p-4 border rounded-3 border-5 gradient"
+              id="value-6" cellIndex = "6"
             ></div>
           </div>
           <div class="row gap-4 p-4">
             <div
               class="col bg-light p-4 border rounded-3 border-5 gradient"
+              id="value-7" cellIndex = "7"
             ></div>
             <div
               class="col bg-light p-4 border rounded-3 border-5 gradient"
+              id="value-8" cellIndex="8"
             ></div>
             <div
               class="col bg-light p-4 border rounded-3 border-5 gradient"
+              id="value-9" cellIndex = "9"
             ></div>
           </div>
         </div>
         <div class="col-sm-4"></div>
       </div>
+
+      
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                Modal title
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              X wins
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">
+                Save changes
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <button class="btn text-white text-center btn-lg fs-2">Reset</button>
 
     <script src="script.js"></script>
   </body>
