@@ -34,6 +34,16 @@ h1 {
   background: linear-gradient(to right, #b621fe, #1fd1f9);
 }
 
+.modal-footer {
+  border-top: none !important;
+}
+
+.badge {
+  
+}
+
+
+
 /* Insta color code */
 /* #b621fe
 
