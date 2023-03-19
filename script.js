@@ -35,7 +35,7 @@ function isPlayerWon(element) {
       isBoxesFilled = boxesArr.every(element => element.innerText != '')
       const winner = $(".winner");
       if (isGameWon) {
-        jsConfetti.addConfetti
+        jsConfetti.addConfetti()
         // $(".gradient").addClass("pe-none");
         winner.text(element.innerText);
         if (element.innerText === "X") {
