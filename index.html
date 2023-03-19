@@ -72,40 +72,42 @@
           </div>
         </div>
         <div class="col-sm-4"></div>
-      </div>
+      </div> 
+    </div>
 
-      <!-- Modal -->
-      <div
-        class="modal fade"
-        id="WonAlertModal"
-        tabindex="-1"
-        aria-labelledby="WonModal"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <!-- <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">
-                Modal title
-              </h1>
-            </div> -->
-            <div class="modal-body d-flex flex-column align-items-center justify-content-between">
-                <div class="winner text-center rounded-circle px-4 py-2"></div>
-                <p>Won's the Game</p>
-            </div>
-            <div class="modal-footer text-center">
-              <button
-                type="button"
-                class="btn btn-secondary"
-                data-bs-dismiss="modal"
-              >
-                Ok
-            </button>
-            </div>
-          </div>
+    <button class="btn btn-primary" onclick="reset()">Reset</button>
+
+    <!-- Modal -->
+    <div
+    class="modal fade"
+    id="WonAlertModal"
+    tabindex="-1"
+    aria-labelledby="WonModal"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <!-- <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">
+            Modal title
+          </h1>
+        </div> -->
+        <div class="modal-body d-flex flex-column align-items-center justify-content-between">
+            <div class="winner text-center rounded-circle px-4 py-2"></div>
+            <p>Won's the Game</p>
+        </div>
+        <div class="modal-footer text-center">
+          <button
+            type="button"
+            class="btn btn-secondary"
+            data-bs-dismiss="modal"
+          >
+            Ok
+        </button>
         </div>
       </div>
     </div>
+  </div>
 
     <!-- jquery -->
     <script
@@ -125,6 +127,8 @@
       src="https://kit.fontawesome.com/3a2330b33b.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+
     <script src="script.js"></script>
   </body>
 </html>
